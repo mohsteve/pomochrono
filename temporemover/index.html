@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-base-200">
+    <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card-body items-center text-center">
+            <h2 class="card-title text-3xl mb-4">Pomodoro Timer</h2>
+            <div id="timer" class="text-5xl font-bold mb-4">25:00</div>
+            <div class="card-actions mb-4">
+                <button id="startBtn" class="btn btn-primary">Start</button>
+                <button id="resetBtn" class="btn btn-secondary">Reset</button>
+            </div>
+            
+            <h3 class="text-xl mb-2">Chronometer</h3>
+            <div id="chrono" class="text-3xl font-bold mb-4">00:00:00</div>
+            <div class="card-actions">
+                <button id="startChronoBtn" class="btn btn-primary">Start</button>
+                <button id="resetChronoBtn" class="btn btn-secondary">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
